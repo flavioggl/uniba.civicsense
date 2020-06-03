@@ -1,0 +1,59 @@
+@import "backgrounds.css";
+@import "buttons.css";
+@import "navbar.css";
+
+body {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* card img top */
+.card-home {
+    text-align: center;
+}
+
+.card-home .card-img-top {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-home-solver .card-img-top {
+    background-image: url("../img/solver.jpg");
+}
+
+.card-home-trouble .card-img-top {
+    background-image: url("../img/trouble.jpg");
+}
+
+.card-home-ticket .card-img-top {
+    background-image: url("../img/onlaptop.jpg");
+}
+
+.card-home-keyboard .card-img-top {
+    background-image: url("../img/keyboard.jpg");
+}
+
+/* custom label*/
+.custom-control.custom-control-vertical {
+    padding-left: 0;
+}
+
+.custom-control.custom-control-vertical .custom-control-label {
+    margin-top: 1.5rem;
+}
+
+.custom-control.custom-control-vertical .custom-control-label::before,
+.custom-control.custom-control-vertical .custom-control-label::after {
+    top: -1.25rem;
+    left: calc(50% - .5rem);
+}
+
+.custom-control.custom-control-vertical.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #343a40;
+}

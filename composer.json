@@ -1,0 +1,31 @@
+{
+  "name": "uniba/civicsense",
+  "description": "Gestisci la tua città",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Guglielmi Flavio Nicola",
+      "email": "flavioggl@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Core\\": "core/",
+      "App\\": "app/",
+      "App\\Controller\\": "app/controllers/",
+      "App\\Model\\": "app/models/"
+    }
+  },
+  "require": {
+    "fzaninotto/faker": "*",
+    "nesbot/carbon": "^2.3",
+    "ext-pdo": "*",
+    "ext-ctype": "*",
+    "ext-json": "*",
+    "geocoder-php/google-maps-provider": "^4.3",
+    "php-http/guzzle6-adapter": "^2.0",
+    "php-http/message": "^1.7",
+    "geocoder-php/locationiq-provider": "^1.0",
+    "geocoder-php/open-cage-provider": "^4.2"
+  }
+}

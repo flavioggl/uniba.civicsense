@@ -1,0 +1,27 @@
+.close.delete {
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    font-size: 1.25rem;
+}
+
+.close.delete:not(:disabled):not(.disabled):focus,
+.close.delete:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+    color: red;
+}
+
+#btnSavedTickets > span {
+    display: inline-block;
+    max-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: bottom;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+#btnSavedTickets:hover > span {
+    max-width: 128px;
+}

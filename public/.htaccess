@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/resources(.*)
+RewriteRule . - [L,QSA]
+
+RewriteCond %{REQUEST_URI} ^/favicon(.*)
+RewriteRule . - [L,QSA]
+
+RewriteRule ^.*$ index\.php [L]
